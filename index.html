@@ -1,23 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DIMI 2.0</title>
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
+        <div class = "container">
+            <div class = "sideMenu">
+                <button class="menuButton topButton" id="clientsBt">Clientes</button>
+                <button class="menuButton" id="nfsBt">Baixar NFs</button>
+                <button class="menuButton bottonButton" id="configBt">Configurações</button>
+                <button class="menuButton" id="exitBt">Sair</button>
+            </div>
+    
+            <div class = "contentBox" id = "contentBox">
+                <div class="content" id="clientsContent">
+                    <fieldset>
+                        <legend>&nbsp Clientes &nbsp</legend>
+                        <div id="clientBox"></div>
 
-        <div class = "sideMenu">
-            <button class="menuButton">Clientes</button>
-            <button class="menuButton">Baixar NFs</button>
-            <button class="menuButton">Configurações</button>
-            <button class="menuButton">Sair</button>
+                        <div id="clientButtonBox">
+                            <button class="clientButton" id="addBt">Novo</button>
+                            <button class="clientButton" id="editBt">Editar</button>
+                            <button class="clientButton" id="delBt">Deletar</button>
+                        </div>
+
+                    </fieldset>
+                </div>
+                <div class="content" id="nfsContent">
+                    <fieldset>
+                        <legend>&nbsp Baixar Notas Fiscais &nbsp</legend>
+
+                    </fieldset>
+                </div>
+                <div class="content" id="configContent">
+                    <fieldset>
+                        <legend>&nbsp Configurações &nbsp</legend>
+
+                    </fieldset>
+                </div>
+            </div>                     
         </div>
 
-        <div class = "contentBox" id = "contentBox"></div>
-        
-
-
+        <script src="sideMenu.js"></script>
+        <script src="clientMenu.js"></script>
+        <script src="poaAcessNF.js"></script>       
     </body>
 </html>

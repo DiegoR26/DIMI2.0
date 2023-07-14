@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* ------------ Menu Lateral ------------ */
+
+.sideMenu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuButton {
+    height: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.menuButton:hover {
+    background-color: #72ee72;
+}
+
+.menuButton:active {
+    background-color: #a0eba0;
+}
+
+.topButton {
+    margin-top: 80px;
+}
+
+.bottonButton {
+    margin-top: auto;
+}
+
+/* ------------ Conteúdo ------------ */
+
+.contentBox {
+    flex-grow: 1;
+    height: 400px;
+    transition: margin 0.5s ease-in-out;
+}
+
+.content {
+    height: 400px;
+    display: block;
+}
+
+.contentBox fieldset {
+    height: 380px;
+}
+
+/* ------------ Clientes ------------ */
+
+#clientsContent #clientBox {
+    border: 1px solid black;
+    height: 325px;
+}
+
+#clientButtonBox {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+}
+
+.clientButton {
+    height: 30px;
+    width: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.clientButton:hover {
+    background-color: #72ee72;
+}
+
+.clientButton:active {
+    background-color: #a0eba0;
+}
