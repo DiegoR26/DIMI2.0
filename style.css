@@ -61,6 +61,25 @@ body {
 #clientsContent #clientBox {
     border: 1px solid black;
     height: 325px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#clientBox div {
+    display: block;
+    width: calc(100% - 5px);
+    margin: 2px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#clientBox div:hover {
+    background-color: #72ee72;
+}
+
+#clientBox div:active {
+    background-color: #a0eba0;
 }
 
 #clientButtonBox {
@@ -81,5 +100,45 @@ body {
 }
 
 .clientButton:active {
+    background-color: #a0eba0;
+}
+
+/* ------------ NFs ------------ */
+#nfsContent {
+    font-size: 14px;
+}
+
+#nfsContent fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nfsContent h1 {
+    font-size: 18px;
+}
+
+.tipeDate {
+    width: 100%;
+}
+
+.tipeDate div {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#downloadBt {
+    height: 30px;
+    width: 120px;
+    margin-top: auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#downloadBt:hover {
+    background-color: #72ee72;
+}
+
+#downloadBt:active {
     background-color: #a0eba0;
 }
