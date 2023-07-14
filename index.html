@@ -34,34 +34,50 @@
                     <fieldset>
                         <legend>&nbsp Baixar Notas Fiscais &nbsp</legend>
 
-                        <div id="competencia" class="tipeDate">
-                            <h1>Competência </h1>
+                        <div class="tipeDate">
+                            <h1>Competência</h1>
     
-                            <div class="inicio">
-                                <label for="cptinicio">Data Inicial</label>
-                                <input type="date" name="cptinicio" id="cptinicio">
+                            <div>
+                                <label for="cptInicio">Data Inicial</label>
+                                <input type="date" name="cptInicio" id="cptInicio">
                             </div>
     
-                            <div class="final">
-                                <label for="cptfinal">Data Final</label>
-                                <input type="date" name="cptfinal" id="cptfinal">
+                            <div>
+                                <label for="cptFinal">Data Final</label>
+                                <input type="date" name="cptFinal" id="cptFinal">
                             </div>
     
                         </div>
     
-                        <div id="emissao" class="tipeDate">   
-                            <h1>Emissão </h1>
+                        <div class="tipeDate">   
+                            <h1>Emissão</h1>
     
-                            <div class="inicio">
+                            <div >
                                 <label for="emInicio">Data Inicial</label>
                                 <input type="date" name="emInicio" id="emInicio">
                             </div>
     
-                            <div class="final">
+                            <div>
                                 <label for="emFinal">Data Final</label>
                                 <input type="date" name="emFinal" id="emFinal">
                             </div>
                             
+                        </div>
+
+                        <div class="nfDivOptions" id="emiterBox">
+                            <input type="radio" name="emiterRadio" id="prestRadio" checked>
+                            <label for="prestRadio">Prestados</label>
+
+                            <input type="radio" name="emiterRadio" id="tomRadio">
+                            <label for="tomRadio">Tomados</label>
+                        </div>
+
+                        <div class="nfDivOptions" id="archiveBox">
+                            <input type="checkbox" name="checkXML" id="checkXML" checked>
+                            <label for="checkXML">XML</label>
+
+                            <input type="checkbox" name="checkPDF" id="checkPDF">
+                            <label for="checkPDF">PDF</label>
                         </div>
                         
                         <button id="downloadBt">Baixar</button>
@@ -75,6 +91,25 @@
                     </fieldset>
                 </div>
             </div>                     
+        </div>
+
+        <div id="clientData">
+            <fieldset>
+                <legend>&nbsp Dados do Cliente &nbsp</legend>
+                
+                <label for="clientName">Nome</label>
+                <input type="text" name="clientName" id="clientName">
+                <label for="clientUser">Usuário</label>
+                <input type="text" name="clientUser" id="clientUser">
+                <label for="clientPassword">Senha</label>
+                <input type="password" name="clientPassword" id="clientPassword">
+                <label for="clientSN">Optante do Simples Nacional</label>
+                <input type="checkbox" name="clientSN" id="clientSN">
+                <div id="clientDataButtonBox">
+                    <button id="clientSaveBt">Salvar</button>
+                    <button id="clientCancelBt">Calcelar</button>
+                </div>
+            </fieldset>
         </div>
 
         <script src="sideMenu.js"></script>

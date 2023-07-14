@@ -7,6 +7,7 @@ body {
     width: 500px;
     height: 400px;
     overflow: hidden;
+    position: absolute;
 }
 
 /* ------------ Menu Lateral ------------ */
@@ -140,5 +141,72 @@ body {
 }
 
 #downloadBt:active {
+    background-color: #a0eba0;
+}
+
+.nfDivOptions {
+    margin-top: 35px;
+}
+
+.nfDivOptions * {
+    cursor: pointer;
+}
+
+#archiveBox label {
+    margin-right: 10px;
+}
+
+#archiveBox input {
+    margin-left: 10px;
+}
+
+/* ------------ Dados os Clientes ------------ */
+
+#clientData {
+    height: 400px;
+    width: 300px;
+    left: 500px;
+    position: absolute;
+    transition: margin 0.5s ease-in-out;
+    background-color: white;
+}
+
+#clientData fieldset {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+#clientData fieldset label {
+    margin-top: 20px;
+}
+
+#clientData fieldset input {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+
+#clientDataButtonBox {
+    margin-top: auto;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#clientDataButtonBox button {
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#clientDataButtonBox button:hover {
+    background-color: #72ee72;
+}
+
+#clientDataButtonBox button:active {
     background-color: #a0eba0;
 }
